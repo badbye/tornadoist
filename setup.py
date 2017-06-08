@@ -3,8 +3,8 @@ from setuptools import setup
 
 setup(
     name = "tornadoist2",
-    version = "0.1.0",
-    author = "Eren G\xc3\xbcven, Yalei",
+    version = "0.2.1",
+    author = "Eren G\xc3\xbcven, Yalei Du",
     author_email = "erenguven0@gmail.com",
     description = "mixins for tornado",
     license = "Apache License, Version 2",

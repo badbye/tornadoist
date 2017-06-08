@@ -1,6 +1,11 @@
 ============
-tornadoist
+tornadoist2
 ============
+
+Installation
+============
+
+    pip install tornadoist2
 
 **tornadoist** -currently- provides Mixins to execute code outside
 ``tornado.ioloop.IOLoop`` to avoid blocking. These are:
@@ -24,7 +29,7 @@ HowTO
 Using ``tornado.gen`` ::
 
     from tornado import web, gen
-    from tornadoist import CeleryMixin
+    from tornadoist2 import CeleryMixin
 
     class CeleryHandler(tornado.web.RequestHandler, CeleryMixin):
         @web.asynchronous

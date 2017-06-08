@@ -105,6 +105,6 @@ class CeleryMixin(object):
         self.celery_socket.close()
         os.remove(fname)
         # sanity check
-        assert self.celery_result.ready()
+        # assert self.celery_result.ready()
         # run callback
-        callback(self.celery_result.result)
+        callback(self.celery_result.get(interval=0.005))
